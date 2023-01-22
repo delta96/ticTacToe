@@ -37,7 +37,7 @@ body {
 
 }
 
-.cell {
+.square {
     background-color: white;
     width: var(--cell-size);
     height: var(--cell-size);
@@ -45,6 +45,19 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+
+.square:not(.x):not(.circle):hover {
+    background-color: lightgray;
+}
+
+.square.x,
+.square.circle {
+    cursor: not-allowed;
+
 }
 
 .endGame {
